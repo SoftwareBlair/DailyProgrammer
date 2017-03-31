@@ -1,26 +1,26 @@
 let testInput = 'Hello, World!'
 let challengeInput = 'The quick brown fox jumps over the lazy dog and the sleeping cat early in the day!!!';
 
-function countLetters(str) {
-  let result = [];
-      newString = str.replace(/[^\w\s]|_/g, '') // Removes Punctuation
-                     .replace(/\s/g, '') // Removes Whitespace
-                     .toLowerCase()  // Converterts all letters to lowercase
+function countLetters(input) {
+  let result = {};
+      newString = flattenString(input);
 
-  for (var i = 0; i < newString.length; i++) {
-    let currentChar = newString[i];
+  newString.forEach(increment => {
+    // Check if result has letter as a key
+    // If so, increment count : else set key and count to 1
+    result.hasOwnProperty(increment) ? result[increment]++ : result[increment] = 1;
+  })
 
-    if (result.indexOf(currentChar) === -1) {
-      let charCount = count(newString, currentChar);
-      result.push(`${currentChar}:${charCount}`);
-    }
-  }
   return result;
+
 }
 
-function count(string, char) {
-  let regEx = new RegExp(char, 'g');
-  return string.match(regEx).length;
+function flattenString(str) {
+  return str.replace(/[^\w\s]|_/g, '') // Removes Punctuation
+            .replace(/\s/g, '') // Removes Whitespace
+            .toLowerCase()  // Converts all letters to lowercase
+            .split('');
 }
 
 console.log(countLetters(testInput));
+console.log(countLetters(challengeInput));
