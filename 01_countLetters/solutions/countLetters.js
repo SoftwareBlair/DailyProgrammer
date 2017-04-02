@@ -9,7 +9,7 @@ function countLetters(input) {
     // Check if result has letter as a key
     // If so, increment count : else set key and count to 1
     result.hasOwnProperty(increment) ? result[increment]++ : result[increment] = 1;
-  })
+  });
 
   return result;
 

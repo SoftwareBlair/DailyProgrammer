@@ -7,7 +7,7 @@ function rampNumbers(int) {
 
   // Loop through length of array of numbers
   for (let i = 0; i < numArr.length; i++) {
-    // If current number is in array is larger than the next then return false.
+    // If current number in array is larger than the next then return false.
     if (numArr[i] > numArr[i + 1]) return false;
   }
   return true;
