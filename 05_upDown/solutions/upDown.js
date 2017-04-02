@@ -7,10 +7,15 @@ function upDown(arr) {
   result = [];
 
   // Loop through array to grab individual numbers
-  // Compare current number to previous number
-  // If higher than previous, push 'up' into result
-  // If lower than previous, push 'down' into result
-  // If same as previous, push 'even' into result
+  for (var i = 0; i < arr.length; i++) {
+    // If same as previous, push 'even' into result
+    if (arr[i] === arr[i + 1]) result.push('even');
+    // If higher than previous, push 'up' into result
+    if (arr[i] < arr[i + 1]) result.push('up');
+    // If lower than previous, push 'down' into result
+    if (arr[i] > arr[i + 1]) result.push('down');
+
+  }
 
   return result;
 
