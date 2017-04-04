@@ -1,5 +1,5 @@
-let trueInput = 1234;
-let falseInput = 1032;
+const trueInput = 1234;
+const falseInput = 1032;
 
 function rampNumbers(int) {
   // Create array with each number from integer

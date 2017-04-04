@@ -1,5 +1,5 @@
-let array1 = ['truck', 'sidewald', 'book'];
-let array2 = ['elf', 'wizard', 'dwarf'];
+const array1 = ['truck', 'sidewald', 'book'];
+const array2 = ['elf', 'wizard', 'dwarf'];
 
 function longestString(arr) {
   let result = {};

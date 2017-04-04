@@ -1,4 +1,4 @@
-let numArray = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+const numArray = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
 function findGreater(arg1, arg2) {
   let result = [];

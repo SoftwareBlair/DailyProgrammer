@@ -1,6 +1,6 @@
-let string1 = 'A man, a plan, a canal, Panama!'; // True
-let string2 = 'race car'; // True
-let string3 = 'Am I a palindrome?'; // False
+const string1 = 'A man, a plan, a canal, Panama!'; // True
+const string2 = 'race car'; // True
+const string3 = 'Am I a palindrome?'; // False
 
 function palindrome(str) {
   let newString = flattenString(str);

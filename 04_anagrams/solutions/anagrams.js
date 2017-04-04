@@ -1,6 +1,6 @@
-let string1 = 'pameesxl';
-let string2 = 'examples';
-let string3 = 'something';
+const string1 = 'pameesxl';
+const string2 = 'examples';
+const string3 = 'something';
 
 function anagram(str1, str2) {
   let firstStr = sortString(str1);

@@ -1,7 +1,7 @@
 // Returns ['down', 'up', 'down', 'down', 'up', 'even', 'up']
-let arrOne = [6, 3, 5, 4, 3, 4, 4, 5];
+const arrOne = [6, 3, 5, 4, 3, 4, 4, 5];
 // Returns ['down', 'even', 'down', 'down', 'up', 'down', 'even']
-let arrTwo = [5, 4, 4, 2, 1, 6, 3, 3];
+const arrTwo = [5, 4, 4, 2, 1, 6, 3, 3];
 
 function upDown(arr) {
   result = [];

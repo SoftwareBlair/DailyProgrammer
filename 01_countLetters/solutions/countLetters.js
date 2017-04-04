@@ -1,5 +1,5 @@
-let testInput = 'Hello, World!'
-let challengeInput = 'The quick brown fox jumps over the lazy dog and the sleeping cat early in the day!!!';
+const testInput = 'Hello, World!'
+const challengeInput = 'The quick brown fox jumps over the lazy dog and the sleeping cat early in the day!!!';
 
 function countLetters(input) {
   let result = {};

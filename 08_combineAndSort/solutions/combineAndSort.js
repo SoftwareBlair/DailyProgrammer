@@ -1,5 +1,5 @@
-let array1 = ['cat', 'dog', 'fish', 'zebra'];
-let array2 = ['lion', 'aardvark', 'gorilla'];
+const array1 = ['cat', 'dog', 'fish', 'zebra'];
+const array2 = ['lion', 'aardvark', 'gorilla'];
 
 function combineAndSort(arr1, arr2) {
   let newArr = [];
