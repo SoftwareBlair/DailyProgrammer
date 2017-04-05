@@ -15,33 +15,25 @@ const matrix2 = [
 const matrixDimension = (arr) => `${arr.length} x ${arr[0].length}`;
 
 const matrixRotate = (arr) => {
-  alterMatrix(arr);
-  reverseMatrix(arr);
-  return arr;
-}
+  let result = [];
+  let i, j;
 
-function reverseMatrix(arr) {
-  for (i in arr) {
-    arr[i] = arr[i].reverse();
-  }
-}
+  for (i = 0; i < arr[0].length; i++) {
+    let newArray = [];
 
-function alterMatrix(arr) {
-  let arrLen = arr[0].length;
-  let temp, i, j;
+    for (j = 0; j < arr.length; j++) {
 
-  for (i = 0, j = 0; i < arrLen; i++) {
+      if (arr[j]) newArray.unshift(arr[j][i]);
 
-    while (j < arrLen) {
-      if (i !== j) {
-        temp = arr[i][j];
-        arr[i][j] = arr[j][i];
-        arr[j][i] = temp;
-      }
-      j++;
     }
+
+    result.push(newArray);
+
   }
-}
+
+  return result;
+
+};
 
 console.log(matrixDimension(matrix1));
 console.log(matrixRotate(matrix1));
