@@ -4,7 +4,7 @@ const square4 = [
   [0, 1, 0, 0],
   [0, 0, 1, 0],
   [0, 0, 0, 1]
-]
+];
 
 // Returns 5
 const square5 = [
@@ -13,7 +13,7 @@ const square5 = [
   [0, 0, 1, 0, 0],
   [0, 0, 0, 1, 0],
   [0, 0, 0, 0, 1]
-]
+];
 
 // Returns 19
 const square19 = [
@@ -22,7 +22,7 @@ const square19 = [
   [1, 0, 9, 7, 6],
   [1, 7, 7, 3, 0],
   [3, 3, 8, 2, 4]
-]
+];
 
 function diagonalSum(arr) {
   let temp = arr;
