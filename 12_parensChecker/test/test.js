@@ -1,4 +1,4 @@
-var parensChecker = require('../solutions/yourfile.js');
+var parensChecker = require('../solutions/parensChecker.js');
 var assert = require('assert');
 
 describe('Parentheses Checker', function() {
@@ -7,6 +7,7 @@ describe('Parentheses Checker', function() {
     assert(parensChecker("()(((())))") === true);
     assert(parensChecker("())))(") === false);
     assert(parensChecker(")(") === false);
+    assert(parensChecker('((()()()))') === true);
   });
 
 });
