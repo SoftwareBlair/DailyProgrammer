@@ -12,6 +12,7 @@ function combineAndSort(arr1, arr2) {
   let result = newArr.sort();
 
   return result;
-}
+
+};
 
 console.log(combineAndSort(array1, array2));

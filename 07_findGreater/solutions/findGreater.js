@@ -11,7 +11,7 @@ function findGreater(arg1, arg2) {
 
   return result;
 
-}
+};
 
 console.log(findGreater(numArray, 3));
 console.log(findGreater(numArray, 7));

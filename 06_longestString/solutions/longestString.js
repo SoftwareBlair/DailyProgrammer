@@ -12,7 +12,8 @@ function longestString(arr) {
   result[longWord] = longWord.length;
 
   return result;
-}
+
+};
 
 console.log(longestString(array1));
 console.log(longestString(array2));

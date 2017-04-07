@@ -10,8 +10,10 @@ function rampNumbers(int) {
     // If current number in array is larger than the next then return false.
     if (numArr[i] > numArr[i + 1]) return false;
   }
+
   return true;
-}
+
+};
 
 console.log(rampNumbers(trueInput));
 console.log(rampNumbers(falseInput));

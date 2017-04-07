@@ -13,14 +13,14 @@ function countLetters(input) {
 
   return result;
 
-}
+};
 
 function flattenString(str) {
   return str.replace(/[^\w\s]|_/g, '') // Removes Punctuation
             .replace(/\s/g, '') // Removes Whitespace
             .toLowerCase()  // Converts all letters to lowercase
             .split('');
-}
+};
 
 console.log(countLetters(testInput));
 console.log(countLetters(challengeInput));

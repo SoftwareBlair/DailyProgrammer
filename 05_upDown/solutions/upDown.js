@@ -15,11 +15,11 @@ function upDown(arr) {
     // If lower than previous, push 'down' into result
     if (arr[i] > arr[i + 1]) result.push('down');
 
-  }
+  };
 
   return result;
 
-}
+};
 
 console.log(upDown(arrOne));
 console.log(upDown(arrTwo));

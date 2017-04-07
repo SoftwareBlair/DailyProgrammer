@@ -14,7 +14,7 @@ function garlandWord(str) {
     first.pop(); // Remove last element of array
     last.shift(); // Remove first element of array
     return first.length;
-  }
+  };
 
   // While shiftPop function returns greater than zero
   while (shiftPop()) {
@@ -22,11 +22,11 @@ function garlandWord(str) {
     // Compare each string, if they match then return the length
     if (first.join('') === last.join('')) return first.length;
 
-  }
+  };
 
   // Returns 0 if a match is not found in while loop
   return result;
-}
+};
 
 console.log(garlandWord(garland1));
 console.log(garlandWord(garland2));

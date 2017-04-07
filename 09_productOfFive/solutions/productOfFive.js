@@ -18,11 +18,11 @@ function productOfFive(num) {
 
     // Incriment index by one after each loop
     index++
-  }
+  };
 
   return result;
 
-}
+};
 
 console.log(productOfFive(shortNum));
 console.log(productOfFive(longNum));
