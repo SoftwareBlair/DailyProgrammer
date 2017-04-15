@@ -1,4 +1,4 @@
-const books = {
+const booksAuthors = {
   "books": [
     {
       "id": 1,
@@ -18,13 +18,14 @@ const books = {
       "author_id": 1,
       "author_name": "Bonnie"
     }
+  ]
 };
 
 const jsonFormatting = (obj) => {
 
 };
 
-console.log(jsonFormatting(books));
+console.log(jsonFormatting(booksAuthors));
 
 /*
   Should Return
