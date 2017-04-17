@@ -1,32 +1,45 @@
-const numArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
-
 /*
   Fizz Buzz Challenge
-  - Given an array of numbers
+  - Funtion takes an integer, then prints the numbers from 1 to integer, but...
+    - If number is divisible by 3, print Fizz
+    - If number is divisible by 5, print Buzz
+    - If number is divisible by both 3 & 5, print FizzBuzz
  */
 
 // Non recursive solution
-const fizzBuzz = (arr) => {
+const fizzBuzz = (int) => {
+  let numArray = Array.from(new Array(int), (v, i) => i + 1);
+  let result = [];
 
-  arr.forEach(num => {
+  numArray.forEach(num => {
 
-    if (num % 3 === 0 && num % 5 === 0) console.log(`${num}: FizzBuzz`);
+    if (num % 15 === 0) result.push(`FizzBuzz`);
     else
-    if (num % 3 === 0) console.log(`${num}: Fizz`);
+    if (num % 3 === 0) result.push(`Fizz`);
     else
-    if (num % 5 === 0) console.log(`${num}: Buzz`);
-    else {
-      console.log(num);
-    };
+    if (num % 5 === 0) result.push(`Buzz`);
+    else result.push(num);
 
   });
 
-  return `Input was : ${arr}`;
+  return result;
 
 };
 
 // Recursive solution
-const fizzBuzzRec = (arr) => {};
+const fizzBuzzRec = (int) => {
+  let result = [];
 
-console.log(fizzBuzz(numArray));
-console.log(fizzBuzzRec(numArray));
+  if (int % 15 === 0) result.push('FizzBuzz');
+  else
+  if (int % 5 === 0) result.push('Buzz');
+  else
+  if (int % 3 === 0) result.push('Fizz');
+  else result.push(int);
+
+  return fizzBuzz(int - 1).concat(result);
+
+};
+
+console.log(fizzBuzz(15));
+console.log(fizzBuzzRec(50));
