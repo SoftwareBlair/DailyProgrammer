@@ -32,9 +32,9 @@ const fizzBuzzRec = (int) => {
 
   if (int % 15 === 0) result.push('FizzBuzz');
   else
-  if (int % 5 === 0) result.push('Buzz');
-  else
   if (int % 3 === 0) result.push('Fizz');
+  else
+  if (int % 5 === 0) result.push('Buzz');
   else result.push(int);
 
   return fizzBuzz(int - 1).concat(result);
