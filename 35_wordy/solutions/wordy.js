@@ -1,4 +1,4 @@
-const operations = {
+const math = {
   'plus': (a, b) => a + b,
   'minus': (a, b) => a - b,
   'divided': (a, b) => a / b,
@@ -7,15 +7,18 @@ const operations = {
 };
 
 const wordy = (str) => {
-  let operator = str.match(/-?\d+|(plus|minus|divided|multiplied|times)/g);
+  const operator = str.match(/-?\d+|(plus|minus|divided|multiplied|times)/g);
+  let result, i;
 
   if (!operator) return 42;
 
-  let result = parseInt(operator[0]);
+  result = parseInt(operator[0]);
 
-  for (let i = 0; i < operator.length; i++) {
+  for (i = 0; i < operator.length; i++) {
+    let op = operator[i];
+    let opPlus = operator[i + 1]
 
-    if (operator[i] in operations) result = operations[operator[i]](result, parseInt(operator[i + 1]));
+    if (op in math) result = math[op](result, parseInt(opPlus));
 
   };
 
