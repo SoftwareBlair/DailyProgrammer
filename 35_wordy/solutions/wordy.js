@@ -7,10 +7,11 @@ const operations = {
 };
 
 const wordy = (str) => {
-  let operator = str.match(/-?\d+|(plus|minus|multiplied|times|divided)/g);
-  let result = parseInt(operator[0]);
+  let operator = str.match(/-?\d+|(plus|minus|divided|multiplied|times)/g);
 
   if (!operator) return 42;
+
+  let result = parseInt(operator[0]);
 
   for (let i = 0; i < operator.length; i++) {
 
