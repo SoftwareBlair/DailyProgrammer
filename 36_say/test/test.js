@@ -1,4 +1,4 @@
-var say = require('../solutions/yourfile.js');
+var say = require('../solutions/say.js');
 var assert = require('assert');
 
 describe('say', function () {
@@ -64,13 +64,13 @@ describe('say', function () {
     assert.equal(say.inEnglish(987654321123), expected);
   });
 
-  xit('raises an error below zero', function () {
+  it('raises an error below zero', function () {
     assert.throws(function() {
       say.inEnglish(-1)
     }, new Error('Number must be between 0 and 999,999,999,999.'));
   });
 
-  xit('raises an error above 999,999,999,999', function () {
+  it('raises an error above 999,999,999,999', function () {
     assert.throws(function() {
       say.inEnglish(1000000000000)
     }, new Error('Number must be between 0 and 999,999,999,999.'));
