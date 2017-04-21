@@ -4,7 +4,8 @@ const string3 = 'Am I a palindrome?'; // False
 
 const palindrome = (str) => {
 
-  if (typeof str !== 'string') return new Error('Not a String');
+  // Check to make sure input is a string. If not, return an error
+  if (typeof str !== 'string') return new Error('Input is not a String');
 
   let newString = flattenString(str);
   let stringRev = reverseString(newString);
