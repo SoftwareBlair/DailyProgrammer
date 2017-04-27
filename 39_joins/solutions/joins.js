@@ -18,6 +18,14 @@ const states = [
 ];
 
 const join = (left, right, foreignKey, primaryKey, newKey) => {
+  let result;
+
+  left.map(obj => {
+    let copyObj = Object.assign({}, obj);
+    result = copyObj;
+  });
+
+  return result;
 
 };
 
