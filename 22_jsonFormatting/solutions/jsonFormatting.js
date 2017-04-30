@@ -6,14 +6,6 @@ const jsonFormatting = (obj) => {
       author = {};
       books = [];
 
-  while (booksArr) {
-
-    
-
-    booksArr.shift();
-
-  }
-
   return { books }
 
 };
