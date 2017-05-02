@@ -24,7 +24,7 @@ const join = (left, right, foreignKey, primaryKey, newKey) => {
 
   // Join left and right objects
   let l_r_join = l_Copy.map(leftObj => {
-      // Set set right object to new key
+      // Set right object to new key
       leftObj[newKey] = right.find(key => leftObj[foreignKey] === key[primaryKey]);
       return leftObj;
     });
