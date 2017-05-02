@@ -18,14 +18,26 @@ const states = [
 ];
 
 const join = (left, right, foreignKey, primaryKey, newKey) => {
-  let result;
 
-  left.map(obj => {
-    let copyObj = Object.assign({}, obj);
-    result = copyObj;
+  // Copy left object
+  let l_Copy = left.map(obj => Object.assign({}, obj));
+
+  // Join left and right objects
+  let l_r_join = l_Copy.map(leftObj => {
+      // Set set right object to new key
+      leftObj[newKey] = right.find(key => leftObj[foreignKey] === key[primaryKey]);
+      return leftObj;
+    });
+
+  // Delete foreignKey from object
+  let delKey = l_r_join.map(obj => {
+    delete obj[foreignKey];
+    return obj;
   });
 
-  return result;
+  let final = delKey;
+
+  return final;
 
 };
 
