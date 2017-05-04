@@ -9,23 +9,17 @@ body {
   background: #1A1A1A;
   height: 100vh;
   width: 680px;
-  display: block;
   margin: auto;
   position: relative;
 }
 
-.left-arrow {
-  width: 0;
-  height: 0;
-  border-top: 340px solid #404040;
-  border-left: 36.1vh solid transparent;
-  float: left;
-}
-
-.right-arrow {
-  width: 0;
-  height: 0;
-  border-top: 340px solid #999999;
-  border-right: 36.1vh solid transparent;
-  float: right;
+.triangle {
+  width: 500px;
+  height: 500px;
+  margin: 0;
+  position: absolute;
+  top: -28%;
+  left: 13%;
+  background: linear-gradient(45deg, #404040 50%, #999999 50%);
+  transform: rotate(45deg);
 }
