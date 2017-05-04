@@ -1,4 +1,4 @@
-var Bob = require('../solutions/yourfile.js');
+var Bob = require('../solutions/bob.js');
 var assert = require('assert');
 
 describe('Bob', function() {
