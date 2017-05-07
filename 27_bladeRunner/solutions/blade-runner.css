@@ -14,9 +14,23 @@ body {
   position: relative;
 }
 
-.poster .dots:nth-child(1n+0) {
-  background: #9FC5E9;
-  height: 20px;
-  width: 20px;
-  border-radius: 50%;
+.dots {
+  height: 810px;
+  width: 90%;
+  background-color: #EEE;
+  background-image: -webkit-radial-gradient(circle, black 26%, transparent 26%, transparent 75%, black 75%, black),
+                    -webkit-radial-gradient(circle, black 26%, transparent 26%, transparent 75%, black 75%, black);
+  background-image: -o-radial-gradient(circle, black 26%, transparent 26%, transparent 75%, black 75%, black),
+                    -o-radial-gradient(circle, black 26%, transparent 26%, transparent 75%, black 75%, black);
+  background-image: radial-gradient(circle, black 26%, transparent 26%, transparent 75%, black 75%, black),
+                    radial-gradient(circle, black 26%, transparent 26%, transparent 75%, black 75%, black);;
+  background-position: 0 0, 30px 30px;
+  background-size: 60px 60px;
+
+  position: absolute;
+  display: block;
+  margin: 0;
+  top: 46%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
