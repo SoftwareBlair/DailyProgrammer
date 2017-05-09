@@ -2,12 +2,10 @@ const booksAuthors = require('../books.json');
 
 const jsonFormatting = (obj) => {
   const booksData = obj.data;
-  let books = [];
   let authors = {};
+  let books = [];
 
   booksData.forEach(book => {
-
-    authors[book.book_id] = authors[book.book_id] || [];
 
     books.push({
       id: book.book_id,
@@ -17,6 +15,8 @@ const jsonFormatting = (obj) => {
       cover: book.cover,
     });
 
+    authors[book.book_id] = authors[book.book_id] || [];
+  
     authors[book.book_id].push({
       first_name: book.first_name,
       last_name: book.last_name,
@@ -36,7 +36,7 @@ const jsonFormatting = (obj) => {
 
   }, []);
 
-  return { books };
+  return books;
 
 };
 
