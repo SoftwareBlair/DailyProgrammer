@@ -16,7 +16,7 @@ const reversePolish = (str) => {
       let num2 = result.pop();  // Remove last element of result array
       let num1 = result.pop();  // Remove next to last element of result array
 
-      // If element equals an operator, do the math ossociated to that operator
+      // If element equals an operator, do the math associated to that operator
       if (elm === '*' || elm === 'x') result.push(num1 * num2);
       else
       if (elm === '/') result.push(num1 / num2);
