@@ -30,13 +30,14 @@ function diagonalSum(arr) {
   let i = 0;
   let result = 0;
 
+  // While temp lenght is not 0
   while (tempLen) {
-    result += temp[0][i];
-    tempLen--;
-    i++;
-    temp.shift();
+    result += temp[0][i]; // Result equals the current index position within the first element of square array
+    tempLen--; // Reduce the temp length by one
+    i++; // Increase index by one
+    temp.shift(); // Remove first element of square array
   }
-
+  
   return result;
 }
 

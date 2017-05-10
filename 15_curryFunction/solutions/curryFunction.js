@@ -1,3 +1,4 @@
+// Requires a nested function to handle the second parameter inputed
 const curryFunction = (x) => (y) => x + y;
 
 console.log(curryFunction(1)(1)); // Returns 2
