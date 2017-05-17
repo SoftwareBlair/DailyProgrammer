@@ -37,11 +37,36 @@ const say = {
 
     if (num < 0 || num > 999999999999) result = 'Number must be between 0 and 999,999,999,999.';
 
-    if (NUM_HELPERS[num]) result = NUM_HELPERS[num];
-
-    if (num > 20) {
+    if (NUM_HELPERS[num]) {
+      result = NUM_HELPERS[num];
+    } 
+    else {
       const numArr = num.toString().split('');
       const numLen = numArr.length;
+
+      if (!NUM_HELPERS[num]) {
+        if (numLen > 1 && numLen < 100) {
+          
+        }
+        if (numLen >= 100 && numLen < 1000) {
+          
+        }
+        if (numLen >= 1000 && numLen < 10000) {
+          
+        }
+        if (numLen >= 10000 && numLen < 1000000) {
+          
+        }
+        if (numLen >= 100000 && numLen < 10000000) {
+          
+        }
+        if (numLen >= 1000000 && numLen < 100000000) {
+          
+        }
+        if (numLen >= 10000000 && numLen < 1000000000) {
+          
+        }
+      }
     }
 
     return result;
