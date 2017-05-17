@@ -31,27 +31,32 @@ const NUM_HELPERS = {
 
 const LARGE_NUM_HELPERS = ['hundred', 'thousand', 'million', 'billion'];
 
-const EXCEPTION = (message) => {
-  this.message = message;
-};
-
 const say = {
   inEnglish: (num) => {
     let result = null;
 
-    if (num < 0 || num > 999999999999) {
-      throw new EXCEPTION('Number must be between 0 and 999,999,999,999.');
-    }
-    for (let key in NUM_HELPERS) {
-      if (NUM_HELPERS.hasOwnProperty(key)) {
-        result = NUM_HELPERS[num];
-      }
+    if (num < 0 || num > 999999999999) result = 'Number must be between 0 and 999,999,999,999.';
+
+    if (num <= 20) result = LESS_THAN_EQUAL(num, NUM_HELPERS);
+
+    if (num > 20) {
+      const numArr = num.toString().split('');
+      const numLen = numArr.length;
     }
 
     return result;
 
   }
 
+};
+
+// Helper Functions
+const LESS_THAN_EQUAL = (input, object) => {
+  for (let key in object) {
+    if (object.hasOwnProperty(key)) {
+      return object[input];
+    }
+  }
 };
 
 module.exports = say;
