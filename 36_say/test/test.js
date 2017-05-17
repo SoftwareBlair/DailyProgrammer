@@ -23,6 +23,14 @@ describe('say', function () {
     assert.equal(say.inEnglish(22), 'twenty-two');
   });
 
+  it('thirty', function () {
+    assert.equal(say.inEnglish(30), 'thirty');
+  });
+
+  it('seventy', function () {
+    assert.equal(say.inEnglish(70), 'seventy');
+  });
+
   xit('one hundred', function () {
     assert.equal(say.inEnglish(100), 'one hundred');
   });
