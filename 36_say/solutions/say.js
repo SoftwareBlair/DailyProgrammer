@@ -45,25 +45,37 @@ const say = {
       const numLen = numArr.length;
 
       if (!NUM_HELPERS[num]) {
-        if (numLen > 1 && numLen < 100) {
+        if (numLen === 2) {
           
         }
-        if (numLen >= 100 && numLen < 1000) {
+        if (numLen === 3) {
           
         }
-        if (numLen >= 1000 && numLen < 10000) {
+        if (numLen === 4) {
           
         }
-        if (numLen >= 10000 && numLen < 1000000) {
+        if (numLen === 5) {
           
         }
-        if (numLen >= 100000 && numLen < 10000000) {
+        if (numLen === 6) {
           
         }
-        if (numLen >= 1000000 && numLen < 100000000) {
+        if (numLen === 7) {
           
         }
-        if (numLen >= 10000000 && numLen < 1000000000) {
+        if (numLen === 8) {
+          
+        }
+        if (numLen === 9) {
+          
+        }
+        if (numLen === 10) {
+          
+        }
+        if (numLen === 11) {
+          
+        }
+        if (numLen === 12) {
           
         }
       }
