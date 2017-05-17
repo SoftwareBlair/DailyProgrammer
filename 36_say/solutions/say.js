@@ -43,42 +43,6 @@ const say = {
     else {
       const numArr = num.toString().split('');
       const numLen = numArr.length;
-
-      if (!NUM_HELPERS[num]) {
-        if (numLen === 2) {
-          
-        }
-        if (numLen === 3) {
-          
-        }
-        if (numLen === 4) {
-          
-        }
-        if (numLen === 5) {
-          
-        }
-        if (numLen === 6) {
-          
-        }
-        if (numLen === 7) {
-          
-        }
-        if (numLen === 8) {
-          
-        }
-        if (numLen === 9) {
-          
-        }
-        if (numLen === 10) {
-          
-        }
-        if (numLen === 11) {
-          
-        }
-        if (numLen === 12) {
-          
-        }
-      }
     }
 
     return result;
@@ -89,11 +53,7 @@ const say = {
 
 // Helper Functions
 const LESS_THAN_EQUAL = (input, object) => {
-  for (let key in object) {
-    if (object.hasOwnProperty(key)) {
-      return object[input];
-    }
-  }
+
 };
 
 module.exports = say;
