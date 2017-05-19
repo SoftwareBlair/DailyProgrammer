@@ -37,9 +37,7 @@ const say = {
 
     if (num < 0 || num > 999999999999) result = 'Number must be between 0 and 999,999,999,999.';
 
-    if (NUM_HELPERS[num]) {
-      result = NUM_HELPERS[num];
-    } 
+    if (NUM_HELPERS[num]) result = NUM_HELPERS[num]; 
     else {
       const numArr = num.toString().split('');
       const numLen = numArr.length;
