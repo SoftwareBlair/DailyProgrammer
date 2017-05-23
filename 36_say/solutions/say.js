@@ -1,3 +1,4 @@
+// Helper Variables
 const NUM_HELPERS = {
     0: 'zero',
     1: 'one',
@@ -31,6 +32,7 @@ const NUM_HELPERS = {
 
 const LARGE_NUM_HELPERS = ['hundred', 'thousand', 'million', 'billion'];
 
+// say.inEnglish function
 const say = {
     inEnglish: (num) => {
         let result = null;
