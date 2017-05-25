@@ -57,7 +57,7 @@ const NUMBER_SAY = (int) => {
     const numArr = int.toString().split('');
     const numLen = numArr.length;
 
-    if (numLen > 0) {
+    if (numLen === 2) {
         
     }
 };
