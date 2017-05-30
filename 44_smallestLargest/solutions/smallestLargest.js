@@ -1,14 +1,17 @@
 const smallLarge = (small, large) => {
   let count = large;
-  let result = [];
+  let numArr = [];
 
   while (count) {
-   result.push(Math.floor(Math.random() * (large - small)) + small);
+   numArr.push(Math.floor(Math.random() * (large - small)) + small);
    count--;
   }
-  console.log(result.length);
-  return result
+
+  let minNum = Math.min(...numArr);
+  let maxNum = Math.max(...numArr);
+
+  return [minNum, maxNum];
 
 };
 
-console.log(smallLarge(0, 20));
+console.log(smallLarge(1, 20));
